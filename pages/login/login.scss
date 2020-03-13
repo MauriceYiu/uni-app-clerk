@@ -1,0 +1,68 @@
+.login{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	.login-wrap{
+		position: absolute;
+		top: 200rpx;
+		width: 80%;
+		.com-info{
+			display: block;
+			font-size: 50rpx;
+			color: #00b870;
+			margin-bottom: 100rpx;
+		}
+		.login-info{
+			margin-top: 50rpx;
+			display: flex;
+			justify-content: center;
+			input{
+				width: 80%;
+				height: 90rpx;
+				border: 1rpx solid #ddd;
+				border-radius: 45rpx;
+				font-size: 28rpx;
+			}
+		}
+		.do-login{
+			margin-top: 100rpx;
+			button{
+				width: 80%;
+				height: 90rpx;
+				background-color: #00b870;
+			}
+		}
+	}
+	.sel-store{
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000000, $alpha: .5);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.sel-store-wrap{
+			width: 80%;
+			background-color: #fff;
+			border-radius: 5rpx;
+			.sc-view{
+				max-height: 500rpx;
+				.store-item{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100rpx;
+					border-bottom: 1rpx solid #ddd;
+				}
+			}
+			
+		}
+	}
+}
