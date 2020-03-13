@@ -12,6 +12,13 @@ export const login = (data) => {
 		return Promise.resolve(res);
 	});
 }
+// 获取分区
+export const getPar = (data) => {
+	return requestFun("get-par", "GET", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}
 // 获取台卓
 export const getAllPar = (data) => {
 	return requestFun("get-allPar", "GET", data).then(res => {
