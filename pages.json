@@ -1,5 +1,6 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -7,12 +8,25 @@
 			}
 		},
 		{
+			"path": "pages/bookTable/bookTable",
+			"style": {
+				"navigationBarTitleText": "预定"
+			}
+		},
+		{
+			"path": "pages/openTable/openTable",
+			"style": {
+				"navigationBarTitleText": "开台"
+			}
+		},
+		
+		{
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTitleText": "登录"
 			}
 		}
-	],
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "火星收银",

@@ -26,3 +26,24 @@ export const getAllPar = (data) => {
 		return Promise.resolve(res);
 	});
 }
+// 开台或预定
+export const openDesk = (data) => {
+	return requestFun("one-open", "POST", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}
+// 确定开台或预定
+export const sureOpenOrBookDesk = (data) => {
+	return requestFun("open-num", "POST", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}
+// 获取已开台或预定的台桌信息
+export const doGetnumDetail = (data) => {
+	return requestFun("get-numDetail", "GET", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}

@@ -1,5 +1,5 @@
 let baseUrl = "https://table-api.huoxingy.com/v1/clerk/";
-let wsUrl = "https://prod-ws.huoxingy.com";
+let wsUrl = "wss://prod-ws.huoxingy.com";
 
 let requestApi = (url, method, data, headers = null) => {
 	let header = {};
@@ -63,3 +63,4 @@ let requestApi = (url, method, data, headers = null) => {
 }
 
 export const requestFun = requestApi;
+export const WS_URL = wsUrl;

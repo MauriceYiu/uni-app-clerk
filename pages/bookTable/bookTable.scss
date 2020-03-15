@@ -1,0 +1,93 @@
+.book-table{
+	width: 100%;
+	height: 100%;
+	.book-table-wrap{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		overflow-y: auto;
+		.item{
+			width: 100%;
+			height: 100rpx;
+			background-color: #fff;
+			font-size: 30rpx;
+			color: #333;
+			border-bottom: 1px solid #ddd;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-sizing: border-box;
+			padding: 0 24rpx;
+			&.oth{
+				display: block;
+				height: auto;
+				.item-left{
+					box-sizing: border-box;
+					padding: 12rpx 0;
+				}
+				.area{
+					margin-top: 24rpx;
+					margin-bottom: 24rpx;
+					width: 100%;
+					height: 300rpx;
+					background-color: #f4f4f4;
+					border-radius: 9rpx;
+					box-sizing: border-box;
+					padding: 12rpx;
+				}
+			}
+		}
+		.btn{
+			width: 100%;
+			text-align: center;
+			margin-top: 50rpx;
+			button{
+				width: 80%;
+				background-color: #ff9f4c;
+			}
+		}
+	}
+	.mask{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba($color: #000000, $alpha: .1);
+		.mask-wrap{
+			width: 100%;
+			min-height: 300rpx;
+			background-color: #FFFFFF;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			.inp-val{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				text-align: center;
+				.tit{
+					width: 100%;
+					display: inline-block;
+					font-size: 38rpx;
+					line-height: 38px;
+					color: #00b870;
+					padding: 10rpx 0;
+					box-sizing: border-box;
+				}
+				.inp{
+					border: 1px solid #ddd;
+					border-radius: 5px;
+					width: 80%;
+					height: 100rpx;
+					font-size: 28rpx;
+				}
+				.btn{
+					width: 80%;
+					margin: 50rpx 0;
+				}
+			}
+		}
+	}
+}
