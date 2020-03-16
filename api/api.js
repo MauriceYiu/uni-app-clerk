@@ -47,3 +47,42 @@ export const doGetnumDetail = (data) => {
 		return Promise.resolve(res);
 	});
 }
+// 获取商品
+export const getGoods = (data) => {
+	return requestFun("get-all", "GET", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}
+// 获取商品规格
+export const getGoodsSpec = (data) => {
+	return requestFun("get-spec", "GET", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}
+
+// 支付
+export const getPayOrderInfo = (data) => {
+	return requestFun("pre-order", "GET", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}
+
+// 添加商品
+export const addGoods = (data) => {
+	return requestFun("add-item", "POST", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}
+
+// 支付
+export const pay = (data) => {
+	return requestFun("payments", "PUT", data).then(res => {
+		console.log(res);
+		return Promise.resolve(res);
+	});
+}
+

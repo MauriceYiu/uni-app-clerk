@@ -80,6 +80,10 @@
 						    key: 'token',
 						    data: token
 						});
+						uni.setStorage({
+						    key: 'phone',
+						    data: data.username
+						});
 						if(res.data.length>1){
 							this.showStoreList = true;
 							this.storeArr = res.data;

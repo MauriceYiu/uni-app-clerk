@@ -164,17 +164,19 @@
 				});
 			},
 			getnumDetail(numId, type = "BUSY") {
+				console.log(type);
 				doGetnumDetail({
 					numId
 				}).then(res => {
-					if (res.status == 200) {
+					console.log(res);
+					if (res.statusCode == 200) {
 						// 成功返回后显示相关界面
 						this.nowDeskOrderInfo = res.data;
 						this.saveNowDeskOrderInfo(res.data);
 						if (type == "BUSY") {
-							// this.$router.push({
-							// 	path: '/goPay'
-							// });
+							uni.navigateTo({
+								url:"../selGoods/selGoods"
+							});
 						} else if (type == "BOOK") {
 							this.curSelTableOpenInfo = {
 								addTime: res.data.numTrans.addTime,
