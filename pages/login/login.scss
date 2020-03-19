@@ -36,6 +36,40 @@
 				background-color: #00b870;
 			}
 		}
+		.service-info{
+			margin-top: 48rpx;
+			font-size: 24rpx;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.agree-btn-wrap{
+				display: inline-block;
+				width: 48rpx;
+				height: 48rpx;
+				display: flex;
+				align-items: center;
+				.agree-out{
+					display: inline-block;
+					width: 32rpx;
+					height: 32rpx;
+					border: 1px solid #ddd;
+					border-radius: 16rpx;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.agree-in{
+						display: inline-block;
+						width: 20rpx;
+						height: 20rpx;
+						background-color: #00b870;
+						border-radius: 10rpx;
+					}
+				}
+			}
+			.agree-cont{
+				border-bottom: 1px solid #00b870;
+			}
+		}
 	}
 	.sel-store{
 		width: 100%;
@@ -63,6 +97,38 @@
 				}
 			}
 			
+		}
+	}
+	.service-cont{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,.3);
+		z-index: 99999;
+		.service-cont-wrap{
+			width: 80%;
+			height: 900rpx;
+			background-color: #fff;
+			border-radius: 9rpx;
+			overflow: hidden;
+			overflow-y: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 28rpx;
+			text-align: left;
+			padding: 10rpx;
+			box-sizing: border-box;
+			.tit{
+				display: inline-block;
+				width: 100%;
+				font-size: 30rpx;
+				font-weight: 600;
+				text-align: center;
+			}
 		}
 	}
 }
