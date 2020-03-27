@@ -20,7 +20,7 @@ let requestApi = (url, method, data, headers = null) => {
 			    title: '账号失效，请重新登录',
 			    duration: 3000
 			});
-			uni.navigateTo({
+			uni.redirectTo({
 			    url: '/pages/login/login'
 			});
 		}

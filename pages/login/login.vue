@@ -286,7 +286,7 @@
 				    key: 'empName',
 				    data: item.employeeName
 				});
-				uni.navigateTo({
+				uni.redirectTo({
 				    url: '../index/index'
 				});
 			},
@@ -343,7 +343,7 @@
 							    key: 'empName',
 							    data: res.data[0].employeeName
 							});
-							uni.navigateTo({
+							uni.redirectTo({
 							    url: '../index/index'
 							});
 						}
